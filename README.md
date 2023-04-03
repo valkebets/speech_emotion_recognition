@@ -4,21 +4,23 @@
 
 ## Summary
 
-This notebook is partly based on [Shivam Burnwal's Kaggle notebook] (https://www.kaggle.com/code/shivamburnwal/speech-emotion-recognition)
+In this notebook is partly based on [Shivam Burnwal's Kaggle notebook](https://www.kaggle.com/code/shivamburnwal/speech-emotion-recognition)
 
 I modified and extended it for my own use:
 
 * classification of 3 emotions (positive, negative, neutral) instead of 7 emotions from the original datasets (e.g., happy, sad, angry, fearful, disgusted, surprised, neutral)
 * extraction of prosodic features
-* modelling included classic machine learning models (Support Vector Machine, Random Forest classifiers), and more recent deep learning models (Convolutional Neural Networks (CNNs).
+* modelling included classic machine learning models (Support Vector Machine, Random Forest classifiers), and a Convolutional Neural Networks model.
 
 
 ## Data
 
 Speech data was downloaded from 5 open datasets:
 
+* [Berlin Emo-DB database](http://www.emodb.bilderbar.info/download/) which includes 535 audio files spoken by 10 professional speakers (5 males and 5 females), displaying 7 emotions (anger, boredom, anxiety, happiness, sadness, disgust, and neutral). 
+
 * [Crowd-sourced Emotional Mutimodal Actors Dataset (Crema-D)](https://github.com/CheyneyComputerScience/CREMA-D)
-which includes 7442 clips of 12 sentences spoken by 91 actors (48 males and 43 females), between the ages of 20 and 74 coming from a variety of races and ethnicities, displaying 6 emotions: angry, disgusted, fearful, happy, neutral, and sad
+which includes 7442 clips of 12 sentences spoken by 91 actors (48 males and 43 females), between the ages of 20 and 74 coming from a variety of races and ethnicities, displaying 6 emotions (angry, disgusted, fearful, happy, neutral, and sad).
 
 * [Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)](https://doi.org/10.1371/journal.pone.0196391)
 which includes 1440 files (60 trials per actor x 24 actors). The RAVDESS contains 24 professional actors (12 female, 12 male), vocalizing two lexically-matched statements in a neutral North American accent, displaying 8 emotions (calm, happy, sad, angry, fearful, surprise, and disgust expressions).
