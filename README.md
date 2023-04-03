@@ -4,13 +4,7 @@
 
 ## Summary
 
-This notebook is partly based on [Shivam Burnwal's Kaggle notebook](https://www.kaggle.com/code/shivamburnwal/speech-emotion-recognition)
-
-I modified and extended it for my own use:
-
-* classification of 3 emotions (positive, negative, neutral) instead of 7 emotions from the original datasets (e.g., happy, sad, angry, fearful, disgusted, surprised, neutral)
-* extraction of prosodic features
-* modelling included classic machine learning models (Support Vector Machine, Random Forest classifiers), and a Convolutional Neural Networks model.
+The goal of this project is to build a deep learning model for emotion recognition from speech. We classify speech into 3 emotions (positive, negative, neutral), after extracting spectral and prosodic features from speech data coming from 5 open datasets. We also use data augmentation to increase the data size and make the model more generalizable. We first deploy 2 classic machine learning models (Support Vector Machine, Random Forest classifiers) to get a first benchmark, then we train a Convolutional Neural Networks model.
 
 
 ## Data
@@ -32,15 +26,9 @@ which includes 480 clips recorded from four native English male speakers (identi
 which includes 2800 files recorded by two actresses (aged 26 and 64 years) that spoke a set of 200 target words in the carrier phrase "Say the word _',  and diplaying 7 emotions (anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). 
 
 
-## Features
-
-I extracted spectral and prosodic features from the data, after augmenting the data to increase training data.
-
-
 ## Usage
 
-The notebook was run on Python 3.9, using the Librosa and Parselmouth packages to analyze audio files, and Tensorflow Keras for DL modelling.
-
+The notebook was tested on Python 3.9, using the Librosa and Parselmouth packages to analyze audio files, as well as Scikit-learn for ML models and Tensorflow for DL models.
 
 
 ## Future directions
