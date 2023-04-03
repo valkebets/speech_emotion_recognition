@@ -4,7 +4,7 @@
 
 ## Summary
 
-In this notebook is partly based on [Shivam Burnwal's Kaggle notebook](https://www.kaggle.com/code/shivamburnwal/speech-emotion-recognition)
+This notebook is partly based on [Shivam Burnwal's Kaggle notebook](https://www.kaggle.com/code/shivamburnwal/speech-emotion-recognition)
 
 I modified and extended it for my own use:
 
